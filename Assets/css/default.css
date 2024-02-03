@@ -1,0 +1,51 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url(../Images/bg.jpg);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed;
+}
+
+body {
+    /* background-image: url(../../assets/img/bg.jpg); */
+    /* background-color: aquamarine; */
+    /* background-image: linear-gradient(to right,#00ff91,#00c6ff,#d600ff); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.center-me {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(71, 73, 66, .2);
+}
+
+input,
+textarea {
+    border-radius: 10px !important;
+}
+
+textarea {
+    resize: none;
+}
+
+input[type='radio'] {
+    margin: 0px 25px;
+    transform: scale(2);
+}
+
+nav a {
+    font-weight: bolder;
+    color: whitesmoke !important;
+}
+
+nav .active {
+    color: chartreuse !important;
+}

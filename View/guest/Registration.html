@@ -1,0 +1,136 @@
+
+<script src="Controller/registerController.js"></script>
+<div id="content" class="p-4 p-md-5 pt-5">
+<div class="row align-items-center">
+<div class="col-sm-3">
+</div>
+<div class="col-sm-6">
+<div class="btn-group w-100">
+  <button type="button" id="student_btn" class="btn btn-primary">Student</button>
+  <button type="button" id="examiner_btn" class="btn btn-primary">Examiner</button>
+</div>
+
+
+<div id="examiner">
+    <div class=" shadow p-3 mb-5 rounded text-light text-center text-right p-3 my-5">
+        <form action="" class="myForm" id="myForm1" method="post">
+            <h3 class="text-center text-primary">EXAMINER REGISTRATION</h3>
+            <div class="row form-group">
+                <div class="col-md-12">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Name" minlength="3" required>
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-md-12">
+                    <label for="dept">Department</label>
+                    <select name="dept" id="dept" required class="form-control dept">
+                        <option value="" disabled selected>-select-</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-md-12">
+                    <label for="phone">Phone</label>
+                    <input type="text" name="phone" id="phone" pattern="[0-9]{10}" class="form-control" placeholder="Phone" required>
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-md-12">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-md-12">
+                    <label for="pword">Password</label>
+                    <input type="password" name="pword" id="pword" class="form-control" placeholder="Password" minlength="6" required>
+                </div>
+            </div>
+            <input type="hidden" name="usertype" value="examiner">
+            <div class="row form-group">
+                <div class="col-md-12 text-right">
+                    <button type="reset" id="cancel" class="btn btn-secondary">Cancel</button>
+                    <button type="submit" id="submit" class="btn btn-success">Register</button>
+                </div>
+            </div>
+            <div class="text-center msg" class="msg"></div>
+        </form>
+        <div class="text-right"><a href="?page=login">SignIn</a> </div>
+    </div>
+</div>
+
+
+<div id="student">
+    <div class=" shadow p-3 mb-5 rounded text-light  text-center text-right p-3 my-5">
+        <form action="" class="myForm" id="myForm2" method="post">
+            <h3 class="text-center text-primary">STUDENT REGISTRATION</h3>
+            <div class="row form-group">
+                <div class="col-md-12">
+                    <label for="uname">Name</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Name" minlength="3" required>
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-md-12">
+                    <label for="dept">Department</label>
+                    <select name="dept" id="dept" class="form-control dept" required>
+                        <option disabled selected value="">-select-</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-md-12">
+                    <label for="sem">Semester</label>
+                    <select name="sem" id="sem" class="form-control" required>
+                        <option disabled selected value="">-select-</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-md-12">
+                    <label for="phone">Contact Number</label>
+                    <input type="text" pattern="[0-9]{10}" name="phone" id="phone" class="form-control" placeholder="Phone Number"  required>
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-md-12">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-md-12">
+                    <label for="address">Address</label>
+                    <textarea name="address" id="address" rows="3" required class="form-control"></textarea>
+                </div>
+            </div>  
+            <div class="row form-group">
+                <div class="col-md-12">
+                    <label for="pword">Password</label>
+                    <input type="password" name="pword" id="pword" class="form-control" placeholder="Password" minlength="6" required>
+                </div>
+            </div>
+            <input type="hidden" name="usertype" value="student">
+            <div class="row form-group">
+                <div class="col-md-12 text-right">
+                    <button type="reset" id="cancel1" class="btn btn-secondary">Cancel</button>
+                    <button type="submit" id="submit1" class="btn btn-success">Register</button>
+                </div>
+            </div>
+            <div class="text-center msg" class="msg"></div>
+        </form>
+        <div class="text-right"><a href="?page=guest/login">SignIn</a> </div>
+    </div>
+</div>
+
+
+</div>
+<div class="col-sm-3"></div>
+</div>

@@ -1,0 +1,37 @@
+
+<script src="Controller/loginController.js"></script>
+<div id="content" class="p-4 p-md-5 pt-5">
+<div class="row align-items-center">
+<div class="col-sm-3">
+</div>
+<div class="col-sm-6">
+<div class=" shadow p-3 mb-5 rounded text-light text-center text-right p-3 my-5">
+    <form action="" id="myForm" method="post">
+        <h3 class="text-primary">LOGIN</h3>
+        <div class="row form-group">
+            <div class="col-md-12">
+                <label for="uname">User Name</label>
+                <input type="text" name="username" id="uname" class="form-control text-center" placeholder="User Name" minlength="3"
+                    required>
+            </div>
+        </div>
+        <div class="row form-group">
+            <div class="col-md-12">
+                <label for="passwd">Password</label>
+                <input type="password" name="password" id="passwd" class="form-control text-center" placeholder="Password" required>
+            </div>
+        </div>
+        <div class="row form-group">
+            <div class="col-md-6 text-right">
+                <button type="reset" id="cancel" class="btn btn-secondary">Cancel</button>
+                <button type="submit" id="submit" class="btn btn-success">Login</button>
+            </div>
+        </div>
+        <div class="text-center" id="msg"></div>
+    </form>
+    <div class="row">
+        <div class="col text-right">not registered ? <a href="?page=guest/registration">SignUp</a> </div>
+    </div>
+</div>
+</div>
+</div>

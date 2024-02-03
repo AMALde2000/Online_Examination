@@ -1,0 +1,40 @@
+<script src="Controller/manageStudentController.js"></script>
+<div id="content" class="p-4 p-md-5 pt-5">
+    <div class="container shadow p-3">
+        <div class="row form-group">
+            <div class="col">
+                <h1 class="text-light">Student Details</h1>
+                <h1 id="msg" class="text-danger">No students to show.</h1>
+            </div>
+        </div>
+        <div class="row form-group">
+            <div class="col">
+                <button class="btn btn-primary btn-sm" id="appr">Approved</button>
+                <button class="btn btn-secondary btn-sm" id="req">Requests</button>
+            </div>
+            <div class="col">
+                <label for="sem" class="text-light">Semester</label>
+                <select id="sem" class="p-2 w-25">
+                    <option value="0">All</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+            </div>
+        </div>
+
+        <table class="table table-responsive-lg table-striped table-light">
+            <thead class="thead-dark">
+                <th>Sl.No</th>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Semester</th>
+                <th>Address</th>
+                <th>Action</th>
+            </thead>
+            <tbody id="tb"></tbody>
+        </table>
+    </div>

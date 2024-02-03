@@ -1,0 +1,36 @@
+<script src="Controller/attendExamController.js"></script>
+<div id="content" class="p-4 p-md-5 pt-5">
+    <div id="main_div" class="container bg-light shadow p-3">
+        <div class="row form-group">
+            <div class="col text-center">
+                <h2 id="exam"></h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10"></div>
+            <div class="col">
+                Date: <span id="date"></span>
+            </div>
+        </div>
+        <div class="row form-group">
+            <div class="col-md-10"></div>
+            <div class="col">
+                Total: <span id="total"></span>
+            </div>
+        </div>
+        <hr>
+        <form action="" method="post" id="myform">
+            <div id="qst_div">
+            </div>
+            <div class="row form-group mt-5">
+                <div class="col text-right">
+                    <button class="btn btn-success">Submit</button>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </form>
+    </div>
+
+    <div id="msg" class="alert-warning p-3 shadow">
+        <h2>You have already attended this exam. See result <a href="?page=student/results">Here</a></h2>
+    </div>

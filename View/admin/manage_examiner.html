@@ -1,0 +1,26 @@
+<script src="Controller/manageExaminerController.js"></script>
+<div id="content" class="p-4 p-md-5 pt-5">
+<div class="container shadow p-3">
+    <div class="row">
+        <div class="col text-center">
+            <h1 class="text-light">Examiners</h1>
+            <h1 id="msg" class="text-danger">No Examiners to show.</h1>
+        </div>
+    </div>
+    <div class="row form-group">
+        <siv class="col">
+            <button class="btn btn-primary btn-sm" id="appr">Approved</button>
+            <button class="btn btn-secondary btn-sm" id="req">Requests</button>
+        </siv>
+    </div>
+    <table class="table table-responsive-lg table-striped table-light">
+        <thead class="thead-dark">
+            <th>Sl.No</th>
+            <th>Name</th>
+            <th>Depatment</th>
+            <th>Phone</th>
+            <th>Action</th>
+        </thead>
+        <tbody id="tb"></tbody>
+    </table>
+</div>
